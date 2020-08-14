@@ -51,7 +51,7 @@ public class DumbParser{
     private static void ParseFile(String input, String output){
         try{
             String text = new String(Files.readAllBytes(Paths.get(input)), StandardCharsets.UTF_8);
-            if(text.indexOf("mTimeout")<0){
+            if(text.indexOf("yyy")<0){
                 ParseSource(input,output);
                 return;
             }
@@ -64,8 +64,8 @@ public class DumbParser{
 
     private static void ParseSource(String input, String output){
         try{
-            File outF = new File("outputSource.txt");
-            FileWriter fw = new FileWriter("outputSource.txt");
+            File outF = new File(output + ".txt");
+            FileWriter fw = new FileWriter(outF);
             fw.write("Source 1\n");
             fw.write("Source 2\n");
             fw.close();
@@ -77,7 +77,7 @@ public class DumbParser{
     private static void ParseDestination(String input, String output){
         try{
             File outF = new File(output + ".txt");
-            FileWriter fw = new FileWriter(output + ".txt");
+            FileWriter fw = new FileWriter(outF);
             fw.write("Destination 1\n");
             fw.write("Destination 2\n");
             fw.close();
