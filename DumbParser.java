@@ -51,7 +51,7 @@ public class DumbParser {
 
     private static void ParseSource(String input, String output) {
         try {
-            File outF = new File(output + ".txt");
+            File outF = new File(output);
             FileWriter fw = new FileWriter(outF);
             fw.write("---\n");
             fw.write("type: file\n");
@@ -85,7 +85,7 @@ public class DumbParser {
 
     private static void ParseDestination(String input, String output) {
         try {
-            File outF = new File(output + ".txt");
+            File outF = new File(output);
             FileWriter fw = new FileWriter(outF);
             fw.write("---\n");
             fw.write("type: file\n");
