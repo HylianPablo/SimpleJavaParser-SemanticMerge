@@ -1,1 +1,12 @@
-yyyyyyyyyyyyyyyyyyyyyyyyy
+class Socket
+{
+   void Disconnect()
+   {
+      SocketLibrary.Disconnect(mSocket, mTimeout);
+   }
+
+   void Connect(string server)
+   {
+      SocketLibrary.Connect(mSocket, server);
+   }
+}
