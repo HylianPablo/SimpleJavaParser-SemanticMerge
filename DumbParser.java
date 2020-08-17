@@ -1,7 +1,6 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.File;
@@ -38,7 +37,7 @@ public class DumbParser {
 
     private static void ParseFile(String input, String output) {
         try {
-            String text = new String(Files.readAllBytes(Paths.get(input)), StandardCharsets.UTF_8);
+            String text = new String(Files.readAllBytes(Paths.get(input)));
             if (text.indexOf("mTimeout") < 0) {
                 ParseSource(input, output);
                 return;
@@ -76,7 +75,7 @@ public class DumbParser {
             fw.write("    - type : method\n");
             fw.write("      name : Disconnect\n");
             fw.write("      locationSpan : {start: [8,0], end: [11,6]}\n");
-            fw.write("      span : [110, 185]\n");
+            fw.write("      span : [110, 185]");
             fw.close();
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -110,7 +109,7 @@ public class DumbParser {
             fw.write("    - type : method\n");
             fw.write("      name : Connect\n");
             fw.write("      locationSpan : {start: [10,0], end: [13,6]}\n");
-            fw.write("      span : [99, 199]\n");
+            fw.write("      span : [99, 199]");
             fw.close();
         } catch (IOException ex) {
             ex.printStackTrace();
