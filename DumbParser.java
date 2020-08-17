@@ -52,30 +52,30 @@ public class DumbParser {
         try {
             File outF = new File(output);
             FileWriter fw = new FileWriter(outF);
-            fw.write("---\r\n");
-            fw.write("type: file\r\n");
-            fw.write("name: {0} " + input+"\r\n");
-            fw.write("locationSpan : {start: [1,0], end: [12,1]}\r\n");
-            fw.write("footerSpan : [0,-1]\r\n");
-            fw.write("parsingErrorsDetected : false\r\n");
-            fw.write("children:\r\n");
+            fw.write("---\n");
+            fw.write("type: file\n");
+            fw.write("name: {"+input+"}\n");
+            fw.write("locationSpan : {start: [1,0], end: [12,1]}\n");
+            fw.write("footerSpan : [0,-1]\n");
+            fw.write("parsingErrorsDetected : false\n");
+            fw.write("children:\n");
 
-            fw.write("  - type : class\r\n");
-            fw.write("    name : Socket\r\n");
-            fw.write("    locationSpan : {start: [1,0], end: [12,1]}\r\n");
-            fw.write("    headerSpan : [0, 16]\r\n");
-            fw.write("    footerSpan : [186, 186]\r\n");
-            fw.write("    children :\r\n");
+            fw.write("  - type : class\n");
+            fw.write("    name : Socket\n");
+            fw.write("    locationSpan : {start: [1,0], end: [12,1]}\n");
+            fw.write("    headerSpan : [0, 16]\n");
+            fw.write("    footerSpan : [186, 186]\n");
+            fw.write("    children :\n");
 
-            fw.write("    - type : method\r\n");
-            fw.write("      name : Connect\r\n");
-            fw.write("      locationSpan : {start: [3, 0], end: [7,2]}\r\n");
-            fw.write("      span : [17, 109]\r\n");
+            fw.write("    - type : method\n");
+            fw.write("      name : Connect\n");
+            fw.write("      locationSpan : {start: [3, 0], end: [7,2]}\n");
+            fw.write("      span : [17, 109]\n");
 
-            fw.write("    - type : method\r\n");
-            fw.write("      name : Disconnect\r\n");
-            fw.write("      locationSpan : {start: [8,0], end: [11,6]}\r\n");
-            fw.write("      span : [110, 185]\r\n");
+            fw.write("    - type : method\n");
+            fw.write("      name : Disconnect\n");
+            fw.write("      locationSpan : {start: [8,0], end: [11,6]}\n");
+            fw.write("      span : [110, 185]\n");
             fw.close();
         } catch (IOException ex) {
             ex.printStackTrace();
@@ -86,30 +86,30 @@ public class DumbParser {
         try {
             File outF = new File(output);
             FileWriter fw = new FileWriter(outF);
-            fw.write("---\r\n");
-            fw.write("type: file\r\n");
-            fw.write("name: {0} "+ input+"\r\n");
-            fw.write("locationSpan : {start: [1,0], end: [14,1]}\r\n");
-            fw.write("footerSpan : [0,-1]\r\n");
-            fw.write("parsingErrorsDetected : false\r\n");
-            fw.write("children:\r\n");
+            fw.write("---\n");
+            fw.write("type: file\n");
+            fw.write("name: {"+input+"}\n");
+            fw.write("locationSpan : {start: [1,0], end: [14,1]}\n");
+            fw.write("footerSpan : [0,-1]\n");
+            fw.write("parsingErrorsDetected : false\n");
+            fw.write("children:\n");
 
-            fw.write("  - type : class\r\n");
-            fw.write("    name : Socket\r\n");
-            fw.write("    locationSpan : {start: [1,0], end: [14,1]}\r\n");
-            fw.write("    headerSpan : [0, 20]\r\n");
-            fw.write("    footerSpan : [200, 200]\r\n");
-            fw.write("    children :\r\n");
+            fw.write("  - type : class\n");
+            fw.write("    name : Socket\n");
+            fw.write("    locationSpan : {start: [1,0], end: [14,1]}\n");
+            fw.write("    headerSpan : [0, 20]\n");
+            fw.write("    footerSpan : [200, 200]\n");
+            fw.write("    children :\n");
 
-            fw.write("    - type : method\r\n");
-            fw.write("      name : Disconnect\r\n");
-            fw.write("      locationSpan : {start: [5, 0], end: [9,2]}\r\n");
-            fw.write("      span : [21, 98]\r\n");
+            fw.write("    - type : method\n");
+            fw.write("      name : Disconnect\n");
+            fw.write("      locationSpan : {start: [5, 0], end: [9,2]}\n");
+            fw.write("      span : [21, 98]\n");
 
-            fw.write("    - type : method\r\n");
-            fw.write("      name : Connect\r\n");
-            fw.write("      locationSpan : {start: [10,0], end: [13,6]}\r\n");
-            fw.write("      span : [99, 199]\r\n");
+            fw.write("    - type : method\n");
+            fw.write("      name : Connect\n");
+            fw.write("      locationSpan : {start: [10,0], end: [13,6]}\n");
+            fw.write("      span : [99, 199]\n");
             fw.close();
         } catch (IOException ex) {
             ex.printStackTrace();
