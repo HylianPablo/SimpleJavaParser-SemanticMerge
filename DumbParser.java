@@ -54,7 +54,7 @@ public class DumbParser {
             FileWriter fw = new FileWriter(outF);
             fw.write("---\n");
             fw.write("type: file\n");
-            fw.write("name: {"+input+"}\n");
+            fw.write("name: "+input+"\n");
             fw.write("locationSpan : {start: [1,0], end: [12,1]}\n");
             fw.write("footerSpan : [0,-1]\n");
             fw.write("parsingErrorsDetected : false\n");
@@ -88,7 +88,7 @@ public class DumbParser {
             FileWriter fw = new FileWriter(outF);
             fw.write("---\n");
             fw.write("type: file\n");
-            fw.write("name: {"+input+"}\n");
+            fw.write("name: "+input+"\n");
             fw.write("locationSpan : {start: [1,0], end: [14,1]}\n");
             fw.write("footerSpan : [0,-1]\n");
             fw.write("parsingErrorsDetected : false\n");
