@@ -1,6 +1,7 @@
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.File;
@@ -37,7 +38,7 @@ public class DumbParser {
 
     private static void ParseFile(String input, String output) {
         try {
-            String text = new String(Files.readAllBytes(Paths.get(input)));
+            String text = new String(Files.readAllBytes(Paths.get(input)), StandardCharsets.UTF_8);
             if (text.indexOf("mTimeout") < 0) {
                 ParseSource(input, output);
                 return;
